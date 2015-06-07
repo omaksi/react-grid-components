@@ -1,7 +1,7 @@
 var React = require('react');
 
 module.exports = React.createClass ({
-
+  displayName: 'Row',
   render: function () {
 
     var styles = {
