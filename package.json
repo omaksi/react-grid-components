@@ -17,6 +17,9 @@
     "type" : "git"
   , "url" : "https://github.com/omaksi/react-grid-components.git"
   },
+  "browserify": {
+    "transform": ["reactify"]
+  },
   "author": "Ondrej Maksi",
   "license": "ISC",
   "dependencies": {
