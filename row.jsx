@@ -6,8 +6,8 @@ module.exports = React.createClass ({
 
     var styles = {
       row: {
-        marginLeft: '15px',
-        marginRight: '15px',
+        marginLeft: '-15px',
+        marginRight: '-15px',
         boxSizing: 'border-box',
       },
       before: {
@@ -21,9 +21,9 @@ module.exports = React.createClass ({
       }
     };
 
-    if (this.props.padding){
-      styles.row.marginLeft = this.props.padding + 'px';
-      styles.row.marginRight = this.props.padding + 'px';
+    if (this.props.margin){
+      styles.row.marginLeft = this.props.margin + 'px';
+      styles.row.marginRight = this.props.margin + 'px';
     }
 
     if (this.props.style){
