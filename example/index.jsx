@@ -4,32 +4,6 @@ var Container = require('react-grid-components/container.jsx');
 var Row = require('react-grid-components/row.jsx');
 var Column = require('react-grid-components/column.jsx');
 
-var data = {
-  width: [],
-  pull: [],
-  push: [],
-  offset: [],
-};
-
-for (var i=1;i<13;i++){
-  data.width.push({
-    width: i,
-    text: 'width={' + i + '}',
-  });
-  data.pull.push({
-    pull: i,
-    text: 'pull={' + i + '}',
-  });
-  data.push.push({
-    push: i,
-    text: 'push={' + i + '}',
-  });
-  data.offset.push({
-    offset: i,
-    text: 'offset={' + i + '}',
-  });
-}
-
 var App = React.createClass ({
   render: function () {
     var s = {
@@ -102,24 +76,6 @@ var App = React.createClass ({
               </Column>
             </Row>
           </Container>
-        </div>
-    );
-  }
-});
-
-var SampleElement = React.createClass ({
-  render: function () {
-    var style = {
-      width: '100%',
-      // height: 30,
-      // lineHeight: '30px',
-      // margin: '3px 0px',
-      backgroundColor: '#f3f3f3',
-      border: '1px solid #e3e3e3',
-    };
-    return (
-        <div style={style}>
-          {this.props.children}
         </div>
     );
   }
