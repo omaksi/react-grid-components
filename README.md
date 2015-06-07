@@ -1,4 +1,4 @@
-React Grid Compoenents
+React Grid Components
 =======
 
 A lightweight set of React components used to create a Bootstrap grid
