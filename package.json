@@ -1,8 +1,8 @@
 {
   "name": "react-grid-components",
   "version": "0.0.1",
-  "description": "A set of React components creating a Bootstrap grid, with inline CSS",
-  "main": "index.js",
+  "description": "A set of React components to create a Bootstrap grid, with inline CSS",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,12 @@
     "react",
     "grid",
     "bootstrap",
+    "component",
     "components"
   ],
   "author": "Ondrej Maksi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
 }
