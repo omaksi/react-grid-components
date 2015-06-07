@@ -1,8 +1,8 @@
 var React = require('react');
 
-var Container = require('../container.jsx');
-var Row = require('../row.jsx');
-var Column = require('../column.jsx');
+var Container = require('react-grid-components/container.jsx');
+var Row = require('react-grid-components/row.jsx');
+var Column = require('react-grid-components/column.jsx');
 
 var data = {
   width: [],
