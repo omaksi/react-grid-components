@@ -1,6 +1,6 @@
 {
   "name": "react-grid-components",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A set of React components to create a Bootstrap grid, with inline CSS",
   "main": "",
   "scripts": {
@@ -11,7 +11,10 @@
     "grid",
     "bootstrap",
     "component",
-    "components"
+    "components",
+    "react-component",
+    "react-bootstrap",
+    "react-bootstrap-grid",
   ],
   "repository":{
     "type" : "git"

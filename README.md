@@ -5,7 +5,7 @@ A lightweight set of React components used to create a Bootstrap grid
 
 ##Features
 
-* Three simple components: Container, Row, Column
+* Three simple components: *Container*, *Row*, *Column*
 * No dependencies except React
 * Inline CSS
 
@@ -30,6 +30,17 @@ A lightweight set of React components used to create a Bootstrap grid
 ```
 
 For more please see example folder in the git repo
+
+##Optional CSS
+
+To have a more consistent Bootstrap experience, you can add this global css rule (to your index.html)
+However this is optional as the components have this included in the inline styles
+
+```css
+*{
+  box-sizing: border-box;
+}
+```
 
 ##TODO
 
