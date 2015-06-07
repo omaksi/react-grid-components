@@ -1,7 +1,7 @@
 React Grid Compoenents
 =======
 
-A lightweight set of React components used to create a Bootstrap-like grid
+A lightweight set of React components used to create a Bootstrap grid
 
 ##Features
 
@@ -12,6 +12,11 @@ A lightweight set of React components used to create a Bootstrap-like grid
 ##Example
 
 * Please see example folder in git repo
+
+##TODO
+
+* Responsive features
+* Code examples in these docs
 
 ##License
 
