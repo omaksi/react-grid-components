@@ -11,20 +11,30 @@ A lightweight set of React components used to create a Bootstrap grid
 
 ##Example
 
+Load the components:
+
+```js
+var Container = require('react-grid-components/container.jsx');
+var Row = require('react-grid-components/row.jsx');
+var Column = require('react-grid-components/column.jsx');
+```
+
+Usage:
+
 ```html
 <Container>
   <Row>
-    <Column style={s} width={9}>
+    <Column width={9}>
       Parent Column
       <Row>
-        <Column style={s} width={6}>Child Column 1</Column>
-        <Column style={s} width={6}>Child Column 2</Column>
+        <Column width={6}>Child Column 1</Column>
+        <Column width={6}>Child Column 2</Column>
       </Row>
     </Column>
   </Row>
   <Row>
-    <Column style={s} width={3} offset={3}>Column with an offset 1</Column>
-    <Column style={s} width={3} offset={3}>Column with an offset 2</Column>
+    <Column width={3} offset={3}>Column with an offset 1</Column>
+    <Column width={3} offset={3}>Column with an offset 2</Column>
   </Row>
 </Container>
 ```
