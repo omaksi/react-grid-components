@@ -15,7 +15,7 @@ module.exports = React.createClass ({
       }
     };
 
-    if (this.props.padding){
+    if (this.props.padding === 0 || this.props.padding){
       styles.col.paddingLeft = this.props.padding + 'px';
       styles.col.paddingRight = this.props.padding + 'px';
     }
@@ -28,13 +28,13 @@ module.exports = React.createClass ({
       styles.col.width = ((this.props.width/12)*100) + '%';
     }
 
-    if (this.props.pull) {
-      styles.col.right = ((this.props.pull/12)*100) + '%';
-    }
-
-    if (this.props.push) {
-      styles.col.left = ((this.props.push/12)*100) + '%';
-    }
+    // if (this.props.pull) {
+    //   styles.col.right = ((this.props.pull/12)*100) + '%';
+    // }
+    //
+    // if (this.props.push) {
+    //   styles.col.left = ((this.props.push/12)*100) + '%';
+    // }
 
     if (this.props.offset) {
       styles.col.marginLeft = ((this.props.offset/12)*100) + '%';

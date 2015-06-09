@@ -21,9 +21,9 @@ module.exports = React.createClass ({
       }
     };
 
-    if (this.props.margin){
-      styles.row.marginLeft = this.props.margin + 'px';
-      styles.row.marginRight = this.props.margin + 'px';
+    if (this.props.padding === 0 || this.props.padding){
+      styles.row.paddingLeft = this.props.padding + 'px';
+      styles.row.paddingRight = this.props.padding + 'px';
     }
 
     if (this.props.style){
