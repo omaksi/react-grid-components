@@ -3,10 +3,6 @@ var React = require('react');
 module.exports = React.createClass ({
   displayName: 'Container',
 
-  getInitialState: function(){
-
-  },
-  
   render: function () {
 
     var styles = {
