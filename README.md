@@ -14,9 +14,9 @@ A lightweight set of React components used to create a Bootstrap grid
 Load the components:
 
 ```js
-var Container = require('react-grid-components/container.jsx');
-var Row = require('react-grid-components/row.jsx');
-var Column = require('react-grid-components/column.jsx');
+var Container = require('react-grid-components/container');
+var Row = require('react-grid-components/row');
+var Column = require('react-grid-components/column');
 ```
 
 Usage:
@@ -58,4 +58,4 @@ However this is optional as the components have this included in the inline styl
 
 ##License
 
-ISC
+MIT

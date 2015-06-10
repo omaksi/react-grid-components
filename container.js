@@ -2,6 +2,11 @@ var React = require('react');
 
 module.exports = React.createClass ({
   displayName: 'Container',
+
+  getInitialState: function(){
+
+  },
+  
   render: function () {
 
     var styles = {
@@ -28,13 +33,13 @@ module.exports = React.createClass ({
     }
 
     return (
-      <div>
-        <div style={styles.before}></div>
-        <div style={styles.container}>
-          {this.props.children}
-        </div>
-        <div style={styles.after}></div>
-      </div>
+      React.createElement("div", null, 
+        React.createElement("div", {style: styles.before}), 
+        React.createElement("div", {style: styles.container}, 
+          this.props.children
+        ), 
+        React.createElement("div", {style: styles.after})
+      )
     );
   }
 });
