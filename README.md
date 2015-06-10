@@ -36,6 +36,10 @@ Usage:
     <Column width={3} offset={3}>Column with an offset 1</Column>
     <Column width={3} offset={3}>Column with an offset 2</Column>
   </Row>
+  <Row>
+    <Column width={{lg:6, md:6, sm: 9}}>Column with an offset 1</Column>
+    <Column width={{lg:6, md:9, sm: 12}}>Column with an offset 2</Column>
+  </Row>
 </Container>
 ```
 
@@ -51,10 +55,6 @@ However this is optional as the components have this included in the inline styl
   box-sizing: border-box;
 }
 ```
-
-##TODO
-
-* Responsive features
 
 ##License
 
