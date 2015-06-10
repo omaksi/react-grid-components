@@ -5,7 +5,7 @@ var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
 var reactify = require('reactify');
 
-gulp.task('javascript', function () {
+gulp.task('default', function () {
   // set up the browserify instance on a task basis
   var b = browserify({
     entries: './index.jsx',

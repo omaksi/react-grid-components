@@ -1,35 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var React = require('react');
 
-var Container = require('react-grid-components/container.jsx');
-var Row = require('react-grid-components/row.jsx');
-var Column = require('react-grid-components/column.jsx');
-
-var data = {
-  width: [],
-  pull: [],
-  push: [],
-  offset: [],
-};
-
-for (var i=1;i<13;i++){
-  data.width.push({
-    width: i,
-    text: 'width={' + i + '}',
-  });
-  data.pull.push({
-    pull: i,
-    text: 'pull={' + i + '}',
-  });
-  data.push.push({
-    push: i,
-    text: 'push={' + i + '}',
-  });
-  data.offset.push({
-    offset: i,
-    text: 'offset={' + i + '}',
-  });
-}
+var Container = require('react-grid-components/container');
+var Row = require('react-grid-components/row');
+var Column = require('react-grid-components/column');
 
 var App = React.createClass ({displayName: "App",
   render: function () {
@@ -108,26 +82,8 @@ var App = React.createClass ({displayName: "App",
   }
 });
 
-var SampleElement = React.createClass ({displayName: "SampleElement",
-  render: function () {
-    var style = {
-      width: '100%',
-      // height: 30,
-      // lineHeight: '30px',
-      // margin: '3px 0px',
-      backgroundColor: '#f3f3f3',
-      border: '1px solid #e3e3e3',
-    };
-    return (
-        React.createElement("div", {style: style}, 
-          this.props.children
-        )
-    );
-  }
-});
-
 React.render(React.createElement(App, null), document.getElementById("content"));
-},{"react":160,"react-grid-components/column.jsx":3,"react-grid-components/container.jsx":4,"react-grid-components/row.jsx":5}],2:[function(require,module,exports){
+},{"react":160,"react-grid-components/column":3,"react-grid-components/container":4,"react-grid-components/row":5}],2:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -237,7 +193,7 @@ module.exports = React.createClass ({
       }
     };
 
-    if (this.props.padding){
+    if (this.props.padding === 0 || this.props.padding){
       styles.col.paddingLeft = this.props.padding + 'px';
       styles.col.paddingRight = this.props.padding + 'px';
     }
@@ -250,13 +206,13 @@ module.exports = React.createClass ({
       styles.col.width = ((this.props.width/12)*100) + '%';
     }
 
-    if (this.props.pull) {
-      styles.col.right = ((this.props.pull/12)*100) + '%';
-    }
-
-    if (this.props.push) {
-      styles.col.left = ((this.props.push/12)*100) + '%';
-    }
+    // if (this.props.pull) {
+    //   styles.col.right = ((this.props.pull/12)*100) + '%';
+    // }
+    //
+    // if (this.props.push) {
+    //   styles.col.left = ((this.props.push/12)*100) + '%';
+    // }
 
     if (this.props.offset) {
       styles.col.marginLeft = ((this.props.offset/12)*100) + '%';
@@ -269,11 +225,13 @@ module.exports = React.createClass ({
     );
   }
 });
+
 },{"react":160}],4:[function(require,module,exports){
 var React = require('react');
 
 module.exports = React.createClass ({
   displayName: 'Container',
+
   render: function () {
 
     var styles = {
@@ -310,6 +268,7 @@ module.exports = React.createClass ({
     );
   }
 });
+
 },{"react":160}],5:[function(require,module,exports){
 var React = require('react');
 
@@ -334,9 +293,9 @@ module.exports = React.createClass ({
       }
     };
 
-    if (this.props.margin){
-      styles.row.marginLeft = this.props.margin + 'px';
-      styles.row.marginRight = this.props.margin + 'px';
+    if (this.props.padding === 0 || this.props.padding){
+      styles.row.paddingLeft = this.props.padding + 'px';
+      styles.row.paddingRight = this.props.padding + 'px';
     }
 
     if (this.props.style){
@@ -354,6 +313,7 @@ module.exports = React.createClass ({
     );
   }
 });
+
 },{"react":160}],6:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
