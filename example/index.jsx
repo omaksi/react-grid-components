@@ -1,8 +1,12 @@
 var React = require('react');
 
-var Container = require('react-grid-components/container');
-var Row = require('react-grid-components/row');
-var Column = require('react-grid-components/column');
+var Container = require('../container');
+var Row = require('../row');
+var Column = require('../column');
+
+// var Container = require('react-grid-components/container');
+// var Row = require('react-grid-components/row');
+// var Column = require('react-grid-components/column');
 
 var App = React.createClass ({
   render: function () {
@@ -12,6 +16,7 @@ var App = React.createClass ({
       paddingTop: '10px',
       paddingBottom: '10px',
     };
+
     return (
         <div>
           <Container>
@@ -74,6 +79,12 @@ var App = React.createClass ({
                   <Column style={s} width={6}>width={6}</Column>
                 </Row>
               </Column>
+            </Row>
+          </Container>
+
+          <Container>
+            <Row>
+              <Column style={s} width={{lg:1, md:3, sm:6, xs:12}}>width=lg:1, md:3, sm:6, xs:12</Column>
             </Row>
           </Container>
         </div>

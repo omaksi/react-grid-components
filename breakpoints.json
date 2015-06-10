@@ -1,0 +1,16 @@
+[{
+  "name": "xs",
+  "breakpoint": 0,
+},{
+  "name": "sm",
+  "breakpoint": 768,
+  "container": 750,
+},{
+  "name": "md",
+  "breakpoint": 992,
+  "container": 970,
+},{
+  "name": "lg",
+  "breakpoint": 1200,
+  "container": 1170,
+}]
